@@ -96,7 +96,6 @@
                                         <robotNamespace>hyq</robotNamespace>
 				</plugin>
 			</sensor>
-			<material>Gazebo/Black</material>
 		</gazebo>
 	</xacro:macro>
 
