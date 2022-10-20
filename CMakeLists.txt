@@ -11,6 +11,10 @@ catkin_package(
 #  DEPENDS system_lib
 )
 
+install(DIRECTORY config/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/config
+  PATTERN ".svn" EXCLUDE)
+
 install(DIRECTORY gazebo/
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/gazebo
   PATTERN ".svn" EXCLUDE)
