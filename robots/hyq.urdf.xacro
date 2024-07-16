@@ -3,7 +3,7 @@
 <robot name="hyq" xmlns:xacro="http://ros.org/wiki/xacro">
 
 	<xacro:arg name="task_period" default="0.004"/>
-        <xacro:arg name="new_gazebo_version" default="false"/>
+
 
 	<!-- This argument allows us to load joint sensors that measure the internal wrenches -->
 	<xacro:arg name="load_force_sensors" default="false"/>
@@ -36,7 +36,7 @@ is the world frame). For more, see http://ros.org/wiki/xacro -->
 
 	<!-- body -->
 	<!-- trunk -->
-        <xacro:hyq_trunk name="base" new_gazebo_version="$(arg new_gazebo_version)">
+        <xacro:hyq_trunk name="base">
 		<!--origin xyz="-0.443 -0.191 -0.276" rpy="0 0 0"/-->
 	</xacro:hyq_trunk>
 
